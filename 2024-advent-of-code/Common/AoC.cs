@@ -8,11 +8,6 @@ public abstract class AoC : IAoC
         await Solve($"{path[0]}Test.{path[1]}");
     }
 
-    public Task Solve(IEnumerable<string> input)
-    {
-        throw new NotImplementedException();
-    }
-
     public abstract Task Solve(string inputPath);
     
     protected static async Task<string[]> GetInput(string inputPath)
