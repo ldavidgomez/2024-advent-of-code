@@ -15,11 +15,11 @@ public class AoC02 : AoC
         Console.WriteLine($"Part 2: {tolerateSafe}");
     }
 
-    private static bool IsTolerateSafe(List<int> ints)
+    private static bool IsTolerateSafe(List<int> levels)
     {
-        for (var i = 0; i < ints.Count; i++)
+        for (var i = 0; i < levels.Count; i++)
         {
-            var copy = ints.ToList();
+            var copy = levels.ToList();
             copy.RemoveAt(i);
             if (IsSafe(copy))
             {
